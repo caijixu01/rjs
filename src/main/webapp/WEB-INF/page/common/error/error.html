@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>出错啦！</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body errorBody>
+    <div class="errorInfo">
+        <div class="info1">出错啦！</div>
+        <div class="info2">${errorInfo.resultMessage}。</div>
+    </div>
+    <div id="errorInfo" style="display: none">
+        ${errorInfo.value}
+    </div>
+  </body>
+</html>
+<script>
+    console.log(document.getElementById("errorInfo").innerHTML);
+</script>
